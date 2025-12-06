@@ -52,8 +52,8 @@ export default function About() {
           <div className="relative">
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1621277224630-81a8e6c3e03f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Commercial Diver at Work"
+                src="/images/otheer-1.jpg"
+                alt="ICDS Team Briefing at Work Site"
                 width={600}
                 height={400}
                 className="w-full h-auto object-cover"

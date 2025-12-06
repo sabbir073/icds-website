@@ -139,8 +139,8 @@ export default function Equipment() {
           <div className="space-y-6">
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Diving Equipment"
+                src="/images/other-4.jpg"
+                alt="ICDS Diving Equipment Storage"
                 width={600}
                 height={400}
                 className="w-full h-72 object-cover"
@@ -155,28 +155,28 @@ export default function Equipment() {
             <div className="grid grid-cols-2 gap-6">
               <div className="relative rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="https://images.unsplash.com/photo-1586508577428-120d15d19b72?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                  alt="Underwater Camera"
+                  src="/images/other-2.jpg"
+                  alt="Bridge Construction Work Site"
                   width={300}
                   height={200}
                   className="w-full h-40 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-3 left-3 text-white text-sm font-medium">
-                  Underwater Cameras
+                  Work Site Operations
                 </div>
               </div>
               <div className="relative rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                  alt="Welding Equipment"
+                  src="/images/other-3.jpg"
+                  alt="ICDS Team at Railway Bridge Project"
                   width={300}
                   height={200}
                   className="w-full h-40 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-3 left-3 text-white text-sm font-medium">
-                  Welding Systems
+                  Our Expert Team
                 </div>
               </div>
             </div>

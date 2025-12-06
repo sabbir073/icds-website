@@ -14,7 +14,7 @@ export default function PageHeader({
   title,
   subtitle,
   breadcrumb,
-  backgroundImage = "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+  backgroundImage = "/images/hero-1.jpg",
 }: PageHeaderProps) {
   return (
     <section className="relative py-24 md:py-32 overflow-hidden">

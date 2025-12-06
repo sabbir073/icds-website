@@ -149,7 +149,7 @@ export default function ProjectsPage() {
         title="Our Projects"
         subtitle="Showcasing our expertise through successful completions"
         breadcrumb="Projects"
-        backgroundImage="https://images.unsplash.com/photo-1545558014-8692077e9b5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+        backgroundImage="/images/other-2.jpg"
       />
 
       {/* Featured Projects */}

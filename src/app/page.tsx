@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Certifications from "@/components/Certifications";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { Anchor, Shield, Award, Users, Wrench, Camera, Ship, ArrowRight } from "lucide-react";
@@ -176,8 +177,8 @@ export default function Home() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Commercial Diver at Work"
+                  src="/images/otheer-1.jpg"
+                  alt="ICDS Team Briefing at Work Site"
                   className="w-full h-96 object-cover"
                 />
               </div>
@@ -231,6 +232,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Certifications Section */}
+      <Certifications />
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-emerald-600 to-teal-700 text-white">

@@ -12,17 +12,17 @@ const projects = [
     client: "IHI-SMCC Joint Venture",
     location: "Bangladesh",
     year: "2023",
-    image: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "/images/other-2.jpg",
     featured: true,
   },
   {
-    title: "Jamuna Bridge Repair Work",
+    title: "Railway Bridge Construction Project",
     description:
-      "Comprehensive underwater inspection and repair services for the iconic Jamuna Bridge, including structural assessment and maintenance work.",
+      "Comprehensive underwater inspection and diving support services for major railway bridge construction, including structural assessment and maintenance work with our expert diving team.",
     client: "Government Project",
-    location: "Jamuna River, Bangladesh",
+    location: "Bangladesh",
     year: "2023",
-    image: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "/images/other-3.jpg",
     featured: true,
   },
   {

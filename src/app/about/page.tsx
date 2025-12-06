@@ -57,7 +57,7 @@ export default function AboutPage() {
         title="About Us"
         subtitle="Leading marine services provider in Bangladesh since 2020"
         breadcrumb="About"
-        backgroundImage="https://images.unsplash.com/photo-1559827291-72ee739d0d9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+        backgroundImage="/images/hero-1.jpg"
       />
 
       {/* Introduction */}
@@ -98,8 +98,8 @@ export default function AboutPage() {
             <div className="relative">
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Commercial Diver at Work"
+                  src="/images/otheer-1.jpg"
+                  alt="ICDS Team Briefing at Work Site"
                   className="w-full h-auto object-cover"
                 />
               </div>
