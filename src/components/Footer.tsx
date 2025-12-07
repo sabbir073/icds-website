@@ -129,23 +129,40 @@ export default function Footer() {
             </h4>
             <div className="space-y-4 text-gray-400">
               <div>
-                <p className="font-medium text-white mb-1">Head Office:</p>
+                <p className="font-medium text-white mb-1">Head Office - Dhaka:</p>
                 <p className="text-sm">
                   Omar Shahjahan Tower, 506 Shah Kabir Mazar Road,
                   Azampur Rail Gate, Uttara-1230, Dhaka
                 </p>
               </div>
               <div>
+                <p className="font-medium text-white mb-1">Chittagong Office:</p>
+                <p className="text-sm">
+                  IIUC Tower, Holding # 1700/A, 11th Floor, Plot # 9,
+                  Agrabad C/A, Sheikh Mujib Road, Chittagong - 4100
+                </p>
+              </div>
+              <div>
                 <p className="font-medium text-white mb-1">Phone:</p>
-                <a href="tel:+8801813087877" className="hover:text-emerald-400">
-                  +880 1813-087877
-                </a>
+                <div className="space-y-1 text-sm">
+                  <a href="tel:+8801813087877" className="block hover:text-emerald-400">
+                    +880 1813-087877 (Capt. Ashraful)
+                  </a>
+                  <a href="tel:+8801782526828" className="block hover:text-emerald-400">
+                    +880 1782-526828 (Md. Jamal)
+                  </a>
+                </div>
               </div>
               <div>
                 <p className="font-medium text-white mb-1">Email:</p>
-                <a href="mailto:info@icdsbd.com" className="hover:text-emerald-400">
-                  info@icdsbd.com
-                </a>
+                <div className="space-y-1 text-sm">
+                  <a href="mailto:info@icdsbd.com" className="block hover:text-emerald-400">
+                    info@icdsbd.com
+                  </a>
+                  <a href="mailto:icdsctg@gmail.com" className="block hover:text-emerald-400">
+                    icdsctg@gmail.com
+                  </a>
+                </div>
               </div>
             </div>
           </div>
