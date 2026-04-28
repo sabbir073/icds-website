@@ -1,6 +1,23 @@
 import type { Metadata } from "next";
 
 /**
+ * Resolve the canonical site URL. Reads `NEXT_PUBLIC_SITE_URL` from the
+ * environment (set in `.env` / `.env.local` / hosting env), strips any
+ * trailing slash so concatenation like `${SITE_URL}/about` always works,
+ * and falls back to the production domain so SSR never produces a relative
+ * `metadataBase`.
+ */
+function resolveSiteUrl(): string {
+  const raw =
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    process.env.SITE_URL ||
+    "https://www.icdsbd.com";
+  return raw.replace(/\/+$/, "");
+}
+
+const RESOLVED_SITE_URL = resolveSiteUrl();
+
+/**
  * Central site configuration. Used by every metadata block, JSON-LD generator,
  * sitemap, and the manifest generator. Update values here to propagate
  * across the entire site.
@@ -14,7 +31,7 @@ export const siteConfig = {
     "ICDS is Bangladesh's leading Bureau Veritas-certified commercial diving company providing underwater survey, inspection, repair, salvage, hull cleaning, propeller polishing and underwater welding services for ships, ports, bridges and offshore structures.",
   shortDescription:
     "Bureau Veritas-certified commercial diving, underwater survey, inspection, repair and salvage company in Bangladesh.",
-  url: "https://icds-bd.com",
+  url: RESOLVED_SITE_URL,
   ogImage: "/images/og-image.jpg",
   locale: "en_US",
   language: "en",

@@ -4,7 +4,10 @@
       "Bash(dir:*)",
       "Bash(npx next *)",
       "Bash(curl -s http://localhost:3845/)",
-      "Read(//tmp/**)"
+      "Read(//tmp/**)",
+      "Bash(head -c 1500 .next/server/app/robots.txt.body)",
+      "Bash(head -c 800 .next/server/app/sitemap.xml.body)",
+      "Bash(grep -oE 'href=\"/services\"[^<]{0,300}' .next/server/app/index.html)"
     ],
     "deny": [],
     "ask": []

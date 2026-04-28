@@ -290,9 +290,9 @@ export default function Home() {
                     <Link
                       href={service.href}
                       className="text-emerald-600 hover:text-emerald-700 inline-flex items-center gap-1 text-sm font-medium"
-                      aria-label={`Learn more about ${service.title}`}
                     >
-                      Learn more <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                      Explore {service.title}
+                      <ArrowRight className="w-4 h-4" aria-hidden="true" />
                     </Link>
                   </article>
                 );
