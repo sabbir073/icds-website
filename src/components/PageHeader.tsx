@@ -28,12 +28,20 @@ export default function PageHeader({
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 text-center text-white">
         {/* Breadcrumb */}
-        <nav className="flex items-center justify-center gap-2 text-sm mb-6">
-          <Link href="/" className="text-emerald-300 hover:text-white transition-colors">
-            Home
-          </Link>
-          <ChevronRight className="w-4 h-4 text-emerald-400" />
-          <span className="text-white">{breadcrumb}</span>
+        <nav aria-label="Breadcrumb" className="flex items-center justify-center gap-2 text-sm mb-6">
+          <ol className="flex items-center justify-center gap-2">
+            <li>
+              <Link href="/" className="text-emerald-300 hover:text-white transition-colors">
+                Home
+              </Link>
+            </li>
+            <li className="flex items-center gap-2" aria-hidden="true">
+              <ChevronRight className="w-4 h-4 text-emerald-400" />
+            </li>
+            <li aria-current="page">
+              <span className="text-white">{breadcrumb}</span>
+            </li>
+          </ol>
         </nav>
 
         {/* Title */}

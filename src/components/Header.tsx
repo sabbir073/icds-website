@@ -61,24 +61,25 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between py-3">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3">
+            <Link href="/" className="flex items-center gap-3" aria-label="ICDS — go to homepage">
               <Image
                 src="/images/logo.png"
-                alt="ICDS Logo"
+                alt="International Commercial Diving Services logo"
                 width={70}
                 height={70}
                 className="h-16 w-auto"
+                priority
               />
               <div className="hidden sm:block">
-                <h1 className="text-emerald-700 font-bold text-lg leading-tight">
+                <span className="text-emerald-700 font-bold text-lg leading-tight block">
                   International Commercial
-                </h1>
-                <p className="text-emerald-600 text-sm">Diving Services</p>
+                </span>
+                <span className="text-emerald-600 text-sm">Diving Services</span>
               </div>
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-1">
+            <nav aria-label="Primary navigation" className="hidden lg:flex items-center gap-1">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
@@ -124,7 +125,7 @@ export default function Header() {
             isMenuOpen ? "max-h-screen" : "max-h-0"
           }`}
         >
-          <nav className="bg-white border-t px-4 py-4">
+          <nav aria-label="Mobile primary navigation" className="bg-white border-t px-4 py-4">
             {navLinks.map((link) => (
               <Link
                 key={link.name}

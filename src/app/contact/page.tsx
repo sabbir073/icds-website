@@ -93,13 +93,14 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="min-h-screen">
+    <>
       <Header />
+      <main id="main-content" className="min-h-screen">
       <PageHeader
-        title="Contact Us"
-        subtitle="Get in touch with our expert team"
+        title="Contact ICDS"
+        subtitle="Get in touch for a free quote on commercial diving, underwater survey, marine repair and salvage services across Bangladesh"
         breadcrumb="Contact"
-        backgroundImage="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+        backgroundImage="/images/otheer-1.jpg"
       />
 
       {/* Contact Section */}
@@ -347,7 +348,8 @@ export default function ContactPage() {
         </div>
       </section>
 
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }

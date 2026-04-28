@@ -33,10 +33,12 @@ export default function Hero() {
   return (
     <section
       id="home"
+      aria-label="Hero — International Commercial Diving Services in Bangladesh"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Background Image */}
       <div
+        aria-hidden="true"
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url('/images/hero-1.jpg')`,

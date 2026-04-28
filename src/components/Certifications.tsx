@@ -10,24 +10,28 @@ const certifications = [
     title: "Bureau Veritas Certificate of Approval",
     description: "Certificate approving ICDS as a Service Supplier engaged in carrying out in-water survey on ships and offshore units by diver and/or Remotely Operated Vehicle. Valid until January 2028.",
     image: "/images/cert-1.jpg",
+    alt: "Bureau Veritas Marine & Offshore Certificate of Approval issued to ICDS for in-water survey on ships and offshore units, valid until January 2028",
   },
   {
     id: 2,
     title: "Professional Diving Certifications",
     description: "Multiple diving certifications including SSDE Diver certification, Welder's Certificate, and Letter of Appointment as Commercial Air Diver from SSE Marine PTE LTD.",
     image: "/images/cert-2.jpg",
+    alt: "ICDS Professional Diving Certifications including SSDE Diver, Welder's Certificate and Commercial Air Diver appointment from SSE Marine PTE LTD",
   },
   {
     id: 3,
     title: "Safety & Supervisory Certifications",
     description: "Shipyard Supervisors Safety Course, Surface Supplied Diving Equipment (SSDE) Diving Supervisor certification, and Special Warfare Diving and Salvage Centre Course Certificate.",
     image: "/images/cert-3.jpg",
+    alt: "ICDS Safety and Supervisory Certifications — Shipyard Supervisors Safety, SSDE Diving Supervisor and Special Warfare Diving & Salvage Centre Course",
   },
   {
     id: 4,
     title: "Naval & Military Training Certificates",
     description: "Naval Commando & Diving Course certificates, Campaign Planning and Tools Subject Matter Expert Exchange certifications, and Tiger Shark Counter-Terrorism Training completion certificates.",
     image: "/images/cert-4.jpg",
+    alt: "ICDS Naval and Military Training Certificates — Naval Commando & Diving Course, Campaign Planning and Tiger Shark Counter-Terrorism Training",
   },
 ];
 
@@ -47,15 +51,22 @@ export default function Certifications() {
   };
 
   return (
-    <section id="certifications" className="py-20 bg-gray-50">
+    <section
+      id="certifications"
+      aria-labelledby="certifications-heading"
+      className="py-20 bg-gray-50"
+    >
       <div className="max-w-7xl mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-emerald-600 font-semibold text-sm uppercase tracking-wider">
             Our Credentials
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">
-            Certifications & Accreditations
+          <h2
+            id="certifications-heading"
+            className="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4"
+          >
+            Certifications &amp; Accreditations
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Our team holds internationally recognized certifications ensuring the highest
@@ -74,7 +85,7 @@ export default function Certifications() {
               <div className="relative h-64 overflow-hidden">
                 <Image
                   src={cert.image}
-                  alt={cert.title}
+                  alt={cert.alt}
                   fill
                   className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 />
@@ -149,7 +160,7 @@ export default function Certifications() {
             <div className="relative h-[70vh]">
               <Image
                 src={certifications[selectedCert].image}
-                alt={certifications[selectedCert].title}
+                alt={certifications[selectedCert].alt}
                 fill
                 className="object-contain bg-gray-100"
               />
